@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.WeatherApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.WeatherApp" parent="Base.Theme.WeatherApp" />
+    <style name="ToolbarTitleShadow" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:shadowColor">#FF000000</item>
+        <item name="android:shadowRadius">6</item>
+        <item name="android:shadowDx">4</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+</resources>
