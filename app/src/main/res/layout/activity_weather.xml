@@ -30,7 +30,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
                     app:navigationIcon="@drawable/arrow_back_24px"
-                    app:title="Weather App"
+                    app:title="Weather App "
                     app:titleTextAppearance="@style/ToolbarTitleShadow"
                     app:titleTextColor="@color/white">
 

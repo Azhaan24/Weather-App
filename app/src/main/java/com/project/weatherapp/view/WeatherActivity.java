@@ -147,14 +147,14 @@ public class WeatherActivity extends AppCompatActivity implements NetworkStatusL
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER,500,50,locationListener);
     }
     public void showWeatherData(WeatherModel response){
-        weatherBinding.textViewCity.setText(response.getName()+" , "+response.getSys().getCountry());
-        weatherBinding.textViewTemperature.setText(response.getMain().getTemp()+" °C");
+        weatherBinding.textViewCity.setText(response.getName()+", "+response.getSys().getCountry()+" ");
+        weatherBinding.textViewTemperature.setText(response.getMain().getTemp()+" °C ");
         weatherBinding.textViewWeatherDescription.setText(response.getWeather().get(0).getDescription());
-        weatherBinding.textViewHumidity.setText(response.getMain().getHumidity()+" %");
-        weatherBinding.textViewMaxTemp.setText(response.getMain().getTemp_max()+" °C");
-        weatherBinding.textViewMinTemp.setText(response.getMain().getTemp_min()+" °C");
-        weatherBinding.textViewWind.setText(response.getWind().getSpeed()+"");
-        weatherBinding.textViewPressure.setText(response.getMain().getPressure()+"");
+        weatherBinding.textViewHumidity.setText(response.getMain().getHumidity()+" % ");
+        weatherBinding.textViewMaxTemp.setText(response.getMain().getTemp_max()+" °C ");
+        weatherBinding.textViewMinTemp.setText(response.getMain().getTemp_min()+" °C ");
+        weatherBinding.textViewWind.setText(response.getWind().getSpeed()+" ");
+        weatherBinding.textViewPressure.setText(response.getMain().getPressure()+" ");
 
         weatherBinding.progressBarWeatherData.setVisibility(View.INVISIBLE);
         weatherBinding.linearLayoutWeatherData.setVisibility(View.VISIBLE);
